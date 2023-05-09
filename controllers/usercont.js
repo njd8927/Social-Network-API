@@ -17,12 +17,12 @@ const userController = {
     },
 
     updateUserById (req, res) {
-        User.findOneAndUpdate(req.params.id, req.body, { new: true })
+        User.findOneAndUpdate(req.params.userId, req.body, { new: true })
         .then(userData => res.json(userData));
     },
 
     deleteUserById (req, res) {
-        User.findOneAndDelete(req.params.id)
+        User.findOneAndDelete(req.params.userId)
         .then(userData => res.json(userData));
     },
 
