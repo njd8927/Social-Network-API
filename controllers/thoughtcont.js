@@ -26,6 +26,20 @@ const thoughtController = {
         .then(thoughtData => res.json(thoughtData));
     },
 
+    createReaction (req, res) {
+        Thought.findOneAndUpdate(
+            { _id: req.params.thoughtId },
+            { $push: {reactions: req.body} },
+            { new: true }
+        ).then(thoughtData => res.json(thoughtData));
+    },
+
+    deleteReaction (req, res) {
+        Thought.findOneAndDelete(
+            { _id: req.params.thoughtId },
+            { $pull: {reactions: {reactionId: req.params.reactionId}}}
+        ).then(thoughtData => res.json(thoughtData));
+    }
 };    
 
 module.exports = thoughtController;
