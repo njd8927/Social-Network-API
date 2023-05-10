@@ -8,6 +8,7 @@ const userController = {
 
     getUserById (req, res) {
         User.findById(req.params.userId)
+        // is it findOne or findbyId?
         .then(userData => res.json(userData));
     },
 
@@ -30,6 +31,7 @@ const userController = {
         User.findOneAndUpdate(
             { _id: req. params.userId },
             { $push: { friends: params.friendId }},
+            // why isnt the above req.params.friendId?
             { new: true }
         ) .then(userData => res.json(userData));
     },
