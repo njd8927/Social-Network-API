@@ -24,7 +24,7 @@ This project is intended to provide the user with a social networking applicatio
 For installation instructions, please see the project github repository: https://github.com/njd8927/Social-Network-API
 
 ## Usage
-To initialize application, type 'npm i' from the command line to install the required dependencies. Then type 'npm start' from the command line.
+To initialize application, type 'npm i' from the command line to install the required dependencies. Then type 'npm start' from the command line to start the express server.
 
 ## Contributions
 This project was developed with assistance from JD Tadlock, Armando Osario, Andres Long, https://www.stackoverflow.com and MDN Web Docs.
