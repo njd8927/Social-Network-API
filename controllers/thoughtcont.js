@@ -1,11 +1,9 @@
 const { Thought, User } = require('../models');
 
 const thoughtController = {
-    // why no req here?
     getAllThoughts (req, res) {
         Thought.find({})
         .then(thoughtData => res.json(thoughtData));
-        // is thoughtData correct? I used userData in the user controller
     },
 
     getThoughtById (req, res) {
