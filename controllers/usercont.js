@@ -29,9 +29,8 @@ const userController = {
 
     addFriend (req, res) {
         User.findOneAndUpdate(
-            { _id: req. params.userId },
-            { $push: { friends: params.friendId }},
-            // why isnt the above req.params.friendId?
+            { _id: req.params.userId },
+            { $push: { friends: req.params.friendId }},
             { new: true }
         ) .then(userData => res.json(userData));
     },
