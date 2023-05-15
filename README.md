@@ -35,4 +35,4 @@ GitHub: https://www.github.com/njd8927
 
 Email: nicholasz8687@gmail.com
 
-Link to Walkthrough Video: 
+Link to Walkthrough Video: https://drive.google.com/file/d/1Qw4wWwpLbsXisg4Ah4VIC0Djey9AvXbU/view?pli=1
